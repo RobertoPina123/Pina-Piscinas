@@ -60,14 +60,14 @@
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-  color: var(--cor-branca);
-}
+ a {
+  color: var(--cor-secundaria);
+ }
+ 
+ a:hover {
+   color: var(--cor-principal);
+ }
 
-a:hover {
-  color: var(--cor-preto);
-}
 
 body {
   background-color: var(--cor-secundaria);
@@ -96,6 +96,7 @@ body {
   margin-left: 45px;
 }
 
+/* icones */
 .redes-sociais {
   display: flex;
   gap: 15px;
@@ -107,17 +108,28 @@ body {
 
 .fa-solid {
   margin: 2px;
+
+
+
 }
 
-.menu {
-  display: flex;
-  background-color: var(--background-secoes);
-  width: 100% ;
-  height: auto;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 38px;
+.fa-bars {
+  color: var(--cor-secundaria);
+ font-size: 25px;
+ background-color: var(--background-secoes);
+
+
+
+ 
+
+ 
+
+
 }
+
+
+
+/* Logotipo */
 
 .logo {
   display: flex;
@@ -145,6 +157,17 @@ body {
   color: #69d2e7;
 }
 
+/* Menu Branco que contem logo, navegação e botão  */
+.menu {
+  display: flex;
+  background-color: var(--background-secoes);
+  width: 100% ;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 38px;
+}
+
 .itens-menu {
   display: flex;
   gap: 15px;
@@ -158,13 +181,7 @@ body {
   padding: 7px;
 }
 
-.itens-menu li a {
-  color: var(--cor-secundaria);
-}
 
-.itens-menu li a:hover {
-  color: var(--cor-principal);
-}
 
 .contato {
   border-radius: var(--border-radius-large);
@@ -173,13 +190,41 @@ body {
 
 .contato:hover {
   background-color: var(--background-botao-hover);
+
 }
 
 .contato a:hover {
   color: var(--cor-branca) !important;
 }
 
-#hamburguer {
+.botaomenu {
+  position: absolute;
+  right: 100px;
+  display: none;
+  border: none;
+  box-shadow: none;
+  background-color: var(--background-secoes);
+  
+}
+
+
+
+@media (max-width: 700px) {
+  
+#botaomenu {
+display: block;
+
+}
+
+
+
+.menu {
+  position: relative;
+  top: 10px;
+}
+.itens-menu {
   display: none;
 }
 
+
+}
