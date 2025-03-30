@@ -115,21 +115,6 @@ body {
 
 }
 
-.fa-bars {
-  color: var(--cor-secundaria);
- font-size: 25px;
- background-color: var(--background-secoes);
-
-
-
- 
-
- 
-
-
-}
-
-
 
 /* Logotipo */
 
@@ -177,13 +162,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  
 }
 
 .itens-menu li {
  
   font-family: var(--fonte-principal);
   font-weight: var(--fonte-peso-light);
-  padding: 7px;
+  padding: 6px;
 }
 
 
@@ -221,18 +207,33 @@ body {
   border: none;
   box-shadow: none;
   background-color: var(--background-secoes);
+  font-size: 22px;
+  color: var(--background-footer);
   
 }
 
 
+@media (max-width:1024px) {}
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   
 #botaomenu {
+
 display: block;
+cursor: pointer;
+font-size: 24px;
+border: none;
+padding: 10px;
+position: absolute;
+top: 5px;
+right: 20px;
+z-index: 20;
 
 }
 
+#botaomenu:focus {
+  outline:none;
+}
 
 
 .menu {
@@ -240,7 +241,22 @@ display: block;
   top: 10px;
 }
 .itens-menu {
-  display: none;
+  display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: var(--background-secoes);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 10;
+
+    opacity: 0;  /* Esconde o menu inicialmente */
+    visibility: hidden;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  
 }
 
 
@@ -256,13 +272,21 @@ display: block;
   background: var(--background-secoes);
   padding: 10px 0;
   text-align: center;
+  
   z-index: 10;
-  height: calc(100vh -60px)
-}
+  height: calc(100vh -60px);
+ 
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
 
 .itens-menu.ativo li {
   padding: 10px;
 }
 
+@media (max-width: 480px) {
+
+}
 
 

@@ -80,21 +80,29 @@
           </ul>
         </nav>
 
-        <button class="botaomenu" id="botaomenu"> <i class="fa-solid fa-bars"></i> </button>
+        <button class="botaomenu" id="botaomenu"> &#9776 </button>
 
       </div>
     </header>
   </body>
 
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
+ document.addEventListener("DOMContentLoaded", function () {
     const botaoMenu = document.getElementById("botaomenu");
     const menuItens = document.getElementById("itens-menu");
 
     botaoMenu.addEventListener("click", function () {
         menuItens.classList.toggle("ativo");
+
+        // Alterna o ícone do menu (☰ ↔ ❌)
+        if (menuItens.classList.contains("ativo")) {
+            botaoMenu.innerHTML = "&#10006;"; // Ícone de "X"
+        } else {
+            botaoMenu.innerHTML = "&#9776;"; // Ícone de menu hambúrguer
+        }
     });
 });
+
 
 
 
