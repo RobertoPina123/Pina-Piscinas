@@ -71,6 +71,8 @@
 
 body {
   background-color: var(--cor-secundaria);
+
+
 }
 
 .topo-fixo {
@@ -172,6 +174,9 @@ body {
   display: flex;
   gap: 15px;
   margin-right: 60px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .itens-menu li {
@@ -186,6 +191,13 @@ body {
 .contato {
   border-radius: var(--border-radius-large);
   border: solid var(--background-botao-hover) 1px;
+  display: inline-block;
+  padding: 7px 15px;
+  padding: 7px 15px; /* Ajuste no espaçamento interno */
+  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
+  max-width: 150px; /* Define um limite para a largura do botão */
+  text-align: center; /* Centraliza o texto */
+ 
 }
 
 .contato:hover {
@@ -195,6 +207,11 @@ body {
 
 .contato a:hover {
   color: var(--cor-branca) !important;
+  
+    display: inline-block;
+    width: auto;
+
+
 }
 
 .botaomenu {
@@ -228,3 +245,24 @@ display: block;
 
 
 }
+
+.itens-menu.ativo {
+  display: flex;
+  flex-direction: column ;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: var(--background-secoes);
+  padding: 10px 0;
+  text-align: center;
+  z-index: 10;
+  height: calc(100vh -60px)
+}
+
+.itens-menu.ativo li {
+  padding: 10px;
+}
+
+
+

@@ -87,7 +87,18 @@
   </body>
 
   <script>
-  
+  document.addEventListener("DOMContentLoaded", function () {
+    const botaoMenu = document.getElementById("botaomenu");
+    const menuItens = document.getElementById("itens-menu");
+
+    botaoMenu.addEventListener("click", function () {
+        menuItens.classList.toggle("ativo");
+    });
+});
+
+
+
+
 
   </script>
 </html>
