@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+@font-face {
+  font-family: Bakerie;
+
+  src: url("fontes/bakerie-rough-font-family-1915924/BakerieRough-Regular.otf");
+
+  format: ("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  /* CORES */
+
+  --cor-branca: #ffffff;
+  --cor-principal: #5bc1ac;
+  --cor-secundaria: #5a6f80;
+  --background-secoes: #f0f8ff;
+  --background-footer: #44525d;
+  --background-botao: #597081;
+  --background-botao-hover: #5bc1ac;
+  --cor-preto: #000000;
+  --p-color: #717275;
+  --borda-cor: #e9eaeb;
+
+  /* FONTES */
+
+  --fonte-principal: "Lexend Deca", sans-serif;
+  --font-logo: "Bakerie", sans-serif;
+  --font-logo2: "Open-Sans", sans-serif;
+
+  /* PESOS DE FONTES */
+
+  --fonte-peso-thin: 100;
+  --fonte-peso-extra-light: 200;
+  --fonte-peso-light: 300;
+  --fonte-peso-regular: 400;
+  --fonte-peso-medium: 500;
+  --fonte-peso-semi-bold: 600;
+  --fonte-peso-bold: 700;
+  --fonte-peso-extra-bold: 800;
+  --fonte-peso-black: 900;
+
+  /* BORDER-RADIUS */
+
+  --border-radius-large: 100px;
+  --border-radius-medium: 20px;
+  --border-radius-small: 10px;
+  --border-radius-botao: 5px;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-branca);
+}
+
+a:hover {
+  color: var(--cor-preto);
+}
+
+body {
+  background-color: var(--cor-secundaria);
+}
+
+.topo-fixo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  background-color: var(--cor-principal);
+  color: var(--cor-branca);
+  font-family: var(--fonte-principal);
+  font: var(--fonte-peso-thin);
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.info-contato {
+  display: flex;
+  align-items: center;
+  margin-left: 45px;
+}
+
+.redes-sociais {
+  display: flex;
+  gap: 15px;
+  margin-right: 50px;
+}
+.fa-brands {
+  font-size: 15px;
+}
+
+.fa-solid {
+  margin: 2px;
+}
+
+.menu {
+  display: flex;
+  background-color: var(--background-secoes);
+  width: 100% ;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 38px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  display: block;
+  margin: 5px 0px 5px 50px;
+  width: 50px;
+  height: 50px;
+  margin-right: 5px;
+}
+.logo p {
+  font-family: var(--font-logo);
+  font-size: 25px;
+  color: #f4862f;
+}
+
+.piscinas {
+  margin-left: 50px;
+  display: block;
+  font-family: var(--font-logo2) !important ;
+  font-size: 18px;
+  margin-top: -5px;
+  color: #69d2e7;
+}
+
+.itens-menu {
+  display: flex;
+  gap: 15px;
+  margin-right: 60px;
+}
+
+.itens-menu li {
+ 
+  font-family: var(--fonte-principal);
+  font-weight: var(--fonte-peso-light);
+  padding: 7px;
+}
+
+.itens-menu li a {
+  color: var(--cor-secundaria);
+}
+
+.itens-menu li a:hover {
+  color: var(--cor-principal);
+}
+
+.contato {
+  border-radius: var(--border-radius-large);
+  border: solid var(--background-botao-hover) 1px;
+}
+
+.contato:hover {
+  background-color: var(--background-botao-hover);
+}
+
+.contato a:hover {
+  color: var(--cor-branca) !important;
+}
+
+#hamburguer {
+  display: none;
+}
+
