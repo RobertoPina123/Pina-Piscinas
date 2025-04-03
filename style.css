@@ -29,7 +29,7 @@
   /* FONTES */
 
   --fonte-principal: "Lexend Deca", sans-serif;
-  --font-logo: "Bakerie", sans-serif;
+  --font-logo: "Bakerie", sans-serif; 
   --font-logo2: "Open-Sans", sans-serif;
 
   /* PESOS DE FONTES */
@@ -72,6 +72,24 @@ body {
   background-color: var(--cor-secundaria);
 }
 
+.btn {
+  font-family: var(--fonte-principal);
+  font-weight: var(--fonte-peso-regular);
+  border-radius: var(--border-radius-large) ;
+  border: none;
+  font-size: 16px;
+  padding: 10px;
+  background-color: var(--background-botao);
+  color: white;
+  transition: .5s;
+  
+}
+
+.btn:hover {
+
+  background-color:  var(--background-botao-hover);
+
+}
 .topo-fixo {
   position: fixed;
   top: 0;
@@ -216,7 +234,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: start;
+  text-align: center
 }
 
 .hero-overlay {
@@ -233,9 +251,25 @@ body {
 .hero-content {
   position: absolute;
   color: white;
-  font-family: var(--fonte-peso-medium);
   z-index: 0;
+  font-family: var(--fonte-principal);
+  font-weight: var(--fonte-peso-medium);
+  font-size: 25px;
+
 }
+
+.hero-content p, h1 {
+  padding: 10px;
+}
+
+.dohero {
+  margin-top: 10px;
+  
+}
+
+
+
+
 
 
 
@@ -284,6 +318,14 @@ body {
     transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
     z-index: 100;
   }
+
+  .hero-content h1, p {
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 14px;
+  }
+  
 }
 
 .itens-menu.ativo {
@@ -306,6 +348,7 @@ body {
   padding: 10px;
 
 }
+
 
 
 
