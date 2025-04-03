@@ -87,26 +87,44 @@
 
     <main>
 
-      <section class="hero">
+      <div class="carousel">
+        <div class="slide active" style="background-image: url('imagens/background2.jpg');"></div>
+        <div class="slide" style="background-image: url('imagens/background1.jpg');" ></div>
+        <div class="slide" style="background-image: url('imagens/Background3.jpg');"></div>
+
+       
+          <div class="hero-content"><p>Tudo que sua piscina precisa <br> esta aqui!</p>
+          <p class="herop2">Serviço Profissional de Limpeza de Piscina</p>
+          <button class="btn dohero">Entre em contato</button></div>
+  
         <div class="hero-overlay"></div>
 
-        <div class="hero-content">
-
-
-           <h1>Tudo que sua piscina Precisa <br> esta aqui!</h1>
-
-          <p>Serviço profissional de limpeza de Piscinas</p>
-
-          <button class="btn dohero" > Entre em contato</button>
-
-        </div>
-
         
-      </section>
+    </div>
 
-      <div class="testeclasse"> <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum et inventore, voluptatibus eveniet nobis quaerat aut consequuntur aspernatur tempore ducimus modi tenetur neque asperiores doloremque in eaque. Voluptates, et sapiente.</p></div>
+      
 
     </main>
+
+    <footer>
+      <div class="rodape">
+        <div class="rodape-coluna">
+          <a href=""><img src="imagens/Icone Roberto Pina Piscinas .png" alt=""></a>
+          <p>Roberto Pina</p>
+          <p>Piscinas</p>
+        </div>
+        <div class="rodape-coluna">
+          <h1>Links rápidos </h1>
+           <ul>
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+           </ul>
+        </div>
+        <div class="rodape-coluna"></div>
+        <div class="rodape-coluna"></div>
+      </div>
+    </footer>
   </body>
 
   <script>
@@ -126,7 +144,16 @@
     });
 });
 
+let slides = document.querySelectorAll('.slide');
+        let currentIndex = 0;
 
+        function showNextSlide() {
+            slides[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % slides.length;
+            slides[currentIndex].classList.add('active');
+        }
+
+        setInterval(showNextSlide, 4000); // Troca a cada 4 segundos
 
 
 
