@@ -412,8 +412,8 @@ body {
 
 .historiafoto{
   background-color: var(--background-botao-hover);
-  background: url(imagens/ChatGPT\ Image\ 12\ de\ abr.\ de\ 2025\,\ 22_34_53.png);
-  background-size: 500px;
+  background: url(imagens/medidorparametros.png);
+  background-size: cover;
   background-position: top left;
   height: 500px;
   width: 400px;
@@ -423,6 +423,43 @@ body {
 
 }
 
+.destaqueroberto {
+  height: 500px;
+  background-color: var(--p-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.fotoroberto {
+  height: 300px;
+  width: 250px;
+  margin: 5px;
+  border-radius:var(--border-radius-medium);
+  background: url(imagens/20240729_165708~2.jpg);
+  background-size: cover;
+  background-position: center center ;
+  box-shadow: 0.5px 0.5px 10px 0.5px  #0000006b;
+
+}
+.descricaoroberto {
+  height: 300px;
+  width: 200px;
+  margin-left: 50px;
+  border-radius: var(--border-radius-medium);
+  display: flex;
+  flex-flow: column;
+  text-align: start;
+  color: var(--cor-branca);
+  font-family: var(--fonte-principal);
+  font-size: 15px;
+  justify-content: center;
+}
+.descricaoroberto h1 {
+  color: var(--cor-principal);
+
+}
 
 .formulariocontato {
   margin-top: 150px;
@@ -435,6 +472,22 @@ body {
 
 }
 
+.socialdestaque {
+  font-size: 25px;
+
+  color: white;
+  margin: 10px 0px 0px 5px;
+}
+
+.socialdestaque:hover{
+  color: var(--cor-principal);
+}
+
+.galeria  {
+  height: 500px;
+  width: 100%;
+  background-color: var(--background-secoes);
+}
 .maps {
 
   width: 500px;
