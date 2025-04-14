@@ -688,6 +688,13 @@ body {
   background-color: var(--background-botao-hover);
 }
 
+
+#empresa {
+  display: none;
+ }
+
+
+
 #blog-artigos {
   
   background-color: var(--background-secoes);
@@ -876,9 +883,7 @@ body {
   transition: 1s;
 
 }
-
-
-
+ 
 @media (max-width: 768px) {
   .topo-fixo {
     display: none;

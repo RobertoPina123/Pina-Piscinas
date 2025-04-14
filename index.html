@@ -271,11 +271,63 @@
                 maxlength="160"> Atendimento em Ribeirão Preto e Região</textarea>
             </div>
 
-            <div class="botaoenviar"><input type="submit" value="Enviar"></div>
+           
+            
+
+             <!-- Honeypot: campo invisível para bots -->
+      <div style="display: none;">
+        <input type="text" name="empresa" id="empresa" placeholder="Empresa (não preencher)">
+      </div>
+
+      <!-- Token JS contra bots -->
+      <input type="hidden" name="tokenJS" id="tokenJS">
+
+      <div class="botaoenviar"><input type="submit" value="Enviar"> </div> 
 
 
           </form>
         </div>
+
+        <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const form = document.getElementById("meuFormulario");
+    const btnEnviar = document.getElementById("btnEnviar");
+    const tokenField = document.getElementById("tokenJS");
+
+    // Libera o botão após 3 segundos e gera um token simples
+    setTimeout(() => {
+      btnEnviar.disabled = false;
+      tokenField.value = "xyz-" + Math.random().toString(36).substr(2, 10);
+    }, 3000);
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const dados = new FormData(form);
+
+      try {
+        const resposta = await fetch("https://integracao-telegram-robertopinapiscinas.pinaroberto2080.workers.dev", {
+          method: "POST",
+          body: dados,
+        });
+
+        const resultado = await resposta.text();
+        alert(resultado);
+        form.reset();
+        btnEnviar.disabled = true; // reativa delay ao reabrir
+        setTimeout(() => {
+          btnEnviar.disabled = false;
+          tokenField.value = "xyz-" + Math.random().toString(36).substr(2, 10);
+        }, 3000);
+      } catch (erro) {
+        alert("Erro ao enviar. Tente novamente.");
+        console.error(erro);
+      }
+    });
+  });
+</script>
+
+        
 
         <div class="contatoladodireito">
           <div>
