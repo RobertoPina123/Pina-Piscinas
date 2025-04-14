@@ -461,6 +461,8 @@ body {
 
 }
 
+
+
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -504,14 +506,15 @@ body {
 
 .avaliacao {
   height: 600px;
-  width: 100%;
+  width: auto;
   background-color: var(--cor-branca);
   margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
-}
+  padding: 150px;
+  }
 
 .avaliacao h1 {
   font-family: var(--fonte-principal);
@@ -521,16 +524,8 @@ body {
 
 }
 
-.formulariocontato {
-  margin-top: 150px;
-  margin-bottom: 80px;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: var(--cor-branca);
 
-}
+
 
 .socialdestaque {
   font-size: 25px;
@@ -543,27 +538,54 @@ body {
   color: var(--cor-principal);
 }
 
-.galeria  {
-  height: 500px;
-  width: 100%;
-  background-color: var(--background-secoes);
+.formulariocontato {
+ 
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-branca);
+  margin: 100px  0px 100px 0px;
+
+
 }
+
+.contatoladodireito {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-evenly;
+  
+}
+
 .maps {
 
-  width: 500px;
-  height: 450px;
+  width: 350px;
+  height: 200px;
   background-color: var(--background-botao-hover);
-  padding: 10px;
+  padding: 2px;
   border-radius: var(--border-radius-medium);
+  margin-bottom: 20px;
+}
 
+.fotocontato {
+  width: 350px;
+  height: 200px;
+  background-color: var(--background-secoes);
+  background-image: url(imagens/bloco\ contato\ ferramentas.png);
+  background-size: cover;
+  background-position: center center;
+  border-radius: var(--border-radius-medium);
+  margin-top: 20px;
 
 }
 
-
-   
+.formulario {
+  margin-right: 20px;
+}
 .formulario h1 {
   margin-bottom: 15px ;
-  margin-top: 15px;
+  margin-top: 70px;
   font-family: var(--fonte-principal);
   color: #5bc1ac;
   font-size: 25px;
@@ -576,14 +598,12 @@ body {
    flex-flow: column;
    align-items: star;
    height: 450px;
-   width: 500px;
+   width: 350px;
    background-color:var(--background-secoes);
    border-radius: var(--border-radius-medium);
    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.118);
+ 
   
-   
-
-   
 }
 
 .formulario form  input {
@@ -641,6 +661,61 @@ body {
 .botaoenviar > input:hover {
   background-color: var(--background-botao-hover);
 }
+#blog-artigos {
+  background-color: var(--background-secoes);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#blog-artigos h2 {
+  color: var(--cor-principal);
+  margin: 30px 0px 30px 0px;
+  font-family: var(--fonte-principal);
+  font-size: 35px;
+
+
+}
+.blog {
+  width: 100%;
+  height: 350px;
+  background-color:var(--background-secoes);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.artigo {
+  width: 300px;
+  height: 300px;
+  background-color: var(--cor-branca);
+  border-radius: var(--border-radius-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(black);
+  padding: 10px;
+  text-align: center;
+} 
+
+.artigo a {
+  margin-top: 15px;
+  color: var(--cor-principal);
+  font-size: 20px;
+}
+.artigo a:hover{
+  color: var(--cor-secundaria);
+}
+.artigo h3 {
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+
+
 
 .rodape {
   position: relative;
