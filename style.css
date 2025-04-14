@@ -12,6 +12,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 :root {
   /* CORES */
 
@@ -29,7 +30,7 @@
   /* FONTES */
 
   --fonte-principal: "Lexend Deca", sans-serif;
-  --font-logo: "Bakerie", sans-serif; 
+  --font-logo: "Bakerie", sans-serif;
   --font-logo2: "Open-Sans", sans-serif;
 
   /* PESOS DE FONTES */
@@ -75,21 +76,22 @@ body {
 .btn {
   font-family: var(--fonte-principal);
   font-weight: var(--fonte-peso-regular);
-  border-radius: var(--border-radius-large) ;
+  border-radius: var(--border-radius-large);
   border: none;
   font-size: 16px;
   padding: 10px;
   background-color: var(--background-botao);
   color: white;
   transition: .5s;
-  
+
 }
 
 .btn:hover {
 
-  background-color:  var(--background-botao-hover);
+  background-color: var(--background-botao-hover);
 
 }
+
 .topo-fixo {
   position: fixed;
   top: 0;
@@ -120,6 +122,7 @@ body {
   gap: 15px;
   margin-right: 50px;
 }
+
 .fa-brands {
   font-size: 15px;
 }
@@ -135,6 +138,7 @@ body {
   align-items: center;
   margin: 10px 0 10px 0;
 }
+
 .logo img {
   display: block;
   margin: 5px 0px 5px 50px;
@@ -142,6 +146,7 @@ body {
   height: 50px;
   margin-right: 5px;
 }
+
 .logo p {
   font-family: var(--font-logo);
   font-size: 25px;
@@ -151,7 +156,7 @@ body {
 .piscinas {
   margin-left: 50px;
   display: block;
-  font-family: var(--font-logo2) !important ;
+  font-family: var(--font-logo2) !important;
   font-size: 18px;
   margin-top: -5px;
   color: #69d2e7;
@@ -169,15 +174,15 @@ body {
   z-index: 1000;
   background-color: var(--cor-branca);
   box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.118);
-  
- 
+
+
 
 }
 
 .navegacao {
   display: flex;
   height: 50px;
- 
+
 }
 
 .itens-menu {
@@ -203,12 +208,16 @@ body {
   border-radius: var(--border-radius-large);
   border: solid var(--background-botao-hover) 1px;
   display: inline-block;
-  
-  padding: 7px 15px; /* Ajuste no espaçamento interno */
-  white-space: nowrap; /* Evita que o texto quebre em várias linhas */
-  max-width: 150px; /* Define um limite para a largura do botão */
-  text-align: center; /* Centraliza o texto */
-  
+
+  padding: 7px 15px;
+  /* Ajuste no espaçamento interno */
+  white-space: nowrap;
+  /* Evita que o texto quebre em várias linhas */
+  max-width: 150px;
+  /* Define um limite para a largura do botão */
+  text-align: center;
+  /* Centraliza o texto */
+
 
 }
 
@@ -241,38 +250,39 @@ body {
   height: 100vh;
   z-index: 0;
 }
+
 .hero-content {
   display: flex;
   flex-direction: column;
   position: absolute;
-   color: white;
+  color: white;
   font-family: var(--fonte-principal);
   font-weight: var(--fonte-peso-extra-bold);
   font-size: 40px;
   z-index: 5;
   text-align: center;
   align-items: center;
-  
- }
 
-.hero-content  {
-  
+}
+
+.hero-content {
+
   padding: 10px;
-  text-shadow:  1px 1px 1px rgba(0, 0, 0, 0.763);
-  
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.763);
+
 }
 
 .dohero {
   margin-top: 10px;
   padding: 15px;
   font-size: 18px;
-  
-  
+
+
 }
 
 .herop2 {
   font-size: 25px;
-  text-shadow: 1px  1px 1px #00000079 ;
+  text-shadow: 1px 1px 1px #00000079;
 }
 
 
@@ -281,26 +291,28 @@ body {
   width: 100%;
   height: 100vh;
   position: relative;
-  top:115px;
+  top: 115px;
   margin: auto;
   overflow: hidden;
   z-index: 0;
   justify-content: center;
-  align-items:center ;
- 
-   
+  align-items: center;
+
+
 }
+
 .slide {
   position: absolute;
   width: 100%;
   height: 100vh;
   background-size: cover;
-  background-position: bottom ;
+  background-position: bottom;
   background-attachment: scroll;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
-  
+
 }
+
 .slide.active {
   opacity: 1;
   z-index: 0;
@@ -315,8 +327,9 @@ body {
   text-decoration: none;
   color: var(--cor-principal);
 
-  
+
 }
+
 .bemvindo {
   width: 100%;
   height: 150px;
@@ -325,15 +338,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: start;
-  
 
-  
+
+
 }
 
 .bemvindo img {
   width: 150px;
   height: 150px;
-  margin: 0px 30px 0px 30px ;
+  margin: 0px 30px 0px 30px;
 
 }
 
@@ -353,7 +366,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  
+
 }
 
 .historiabloco {
@@ -365,7 +378,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
-    
+
 }
 
 .historiabloco h1 {
@@ -373,7 +386,7 @@ body {
   color: var(--cor-principal);
   font-size: 30px;
   font-family: var(--fonte-principal);
-  
+
 }
 
 .historiabloco p {
@@ -399,7 +412,7 @@ body {
   color: var(--cor-principal);
   font-size: 30px;
   font-family: var(--fonte-principal);
-  
+
 }
 
 .historiabloco2 p {
@@ -410,7 +423,7 @@ body {
 
 
 
-.historiafoto{
+.historiafoto {
   background-color: var(--background-botao-hover);
   background: url(imagens/medidorparametros.png);
   background-size: cover;
@@ -436,13 +449,14 @@ body {
   height: 300px;
   width: 250px;
   margin: 5px;
-  border-radius:var(--border-radius-medium);
+  border-radius: var(--border-radius-medium);
   background: url(imagens/20240729_165708~2.jpg);
   background-size: cover;
-  background-position: center center ;
-  box-shadow: 0.5px 0.5px 10px 0.5px  #0000006b;
+  background-position: center center;
+  box-shadow: 0.5px 0.5px 10px 0.5px #0000006b;
 
 }
+
 .descricaoroberto {
   height: 300px;
   width: 200px;
@@ -456,6 +470,7 @@ body {
   font-size: 15px;
   justify-content: center;
 }
+
 .descricaoroberto h1 {
   color: var(--cor-principal);
 
@@ -501,7 +516,7 @@ body {
   color: var(--cor-principal);
   text-align: center;
   font-size: 35px;
-  
+
 }
 
 .avaliacao {
@@ -514,7 +529,7 @@ body {
   justify-content: center;
   flex-flow: column;
   padding: 150px;
-  }
+}
 
 .avaliacao h1 {
   font-family: var(--fonte-principal);
@@ -534,18 +549,18 @@ body {
   margin: 10px 0px 0px 5px;
 }
 
-.socialdestaque:hover{
+.socialdestaque:hover {
   color: var(--cor-principal);
 }
 
 .formulariocontato {
- 
+
   height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--cor-branca);
-  margin: 100px  0px 100px 0px;
+  margin: 100px 0px 100px 0px;
 
 
 }
@@ -555,7 +570,7 @@ body {
   flex-flow: column;
   align-items: center;
   justify-content: space-evenly;
-  
+
 }
 
 .maps {
@@ -583,33 +598,35 @@ body {
 .formulario {
   margin-right: 20px;
 }
+
 .formulario h1 {
-  margin-bottom: 15px ;
+  margin-bottom: 15px;
   margin-top: 70px;
   font-family: var(--fonte-principal);
   color: #5bc1ac;
   font-size: 25px;
   align-self: center;
 }
-.formulario  form {
-   
-   font-family: var(--fonte-principal);
-   display: flex;
-   flex-flow: column;
-   align-items: star;
-   height: 450px;
-   width: 350px;
-   background-color:var(--background-secoes);
-   border-radius: var(--border-radius-medium);
-   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.118);
- 
-  
+
+.formulario form {
+
+  font-family: var(--fonte-principal);
+  display: flex;
+  flex-flow: column;
+  align-items: star;
+  height: 450px;
+  width: 350px;
+  background-color: var(--background-secoes);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.118);
+
+
 }
 
-.formulario form  input {
+.formulario form input {
   margin: 10px;
   font-family: var(--fonte-principal);
-  
+
 }
 
 #nome {
@@ -618,12 +635,14 @@ body {
   width: 90%;
   margin-left: 20px;
 }
+
 #sobrenome {
-  border: none;  
+  border: none;
   padding: 5px;
   width: 90%;
   margin-left: 20px;
 }
+
 #descricao {
   border: none;
   padding: 5px;
@@ -648,7 +667,7 @@ body {
 
 
 
-.botaoenviar > input {
+.botaoenviar>input {
   border: none;
   background-color: var(--background-botao);
   width: 100px;
@@ -658,9 +677,10 @@ body {
   font-size: 18px;
 }
 
-.botaoenviar > input:hover {
+.botaoenviar>input:hover {
   background-color: var(--background-botao-hover);
 }
+
 #blog-artigos {
   background-color: var(--background-secoes);
   display: flex;
@@ -677,10 +697,11 @@ body {
 
 
 }
+
 .blog {
   width: 100%;
   height: 350px;
-  background-color:var(--background-secoes);
+  background-color: var(--background-secoes);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -699,16 +720,18 @@ body {
   color: var(black);
   padding: 10px;
   text-align: center;
-} 
+}
 
 .artigo a {
   margin-top: 15px;
   color: var(--cor-principal);
   font-size: 20px;
 }
-.artigo a:hover{
+
+.artigo a:hover {
   color: var(--cor-secundaria);
 }
+
 .artigo h3 {
   margin-bottom: 15px;
   font-size: 25px;
@@ -723,7 +746,7 @@ body {
   width: 100%;
   height: 200px;
   background-color: var(--background-footer);
-  }
+}
 
 .rodape-coluna {
   align-items: center;
@@ -731,91 +754,120 @@ body {
   display: flex;
   flex-direction: column;
   width: 25%;
-    margin-top: 15px;
+  margin-top: 15px;
   font-family: var(--fonte-principal);
   font-size: 18px;
   font-weight: normal;
   color: var(--cor-branca);
-  
-  }
 
-  .rodape-coluna h1 {
-    font-size: 20px;
-    color: var(--cor-principal);
-    align-items: start;
-    margin-left: -27px;
-  }
+}
 
- .rodape-coluna img {
-    display: block;
-    width: 80px;
-    height: 80px;
+.rodape-coluna h1 {
+  font-size: 20px;
+  color: var(--cor-principal);
+  align-items: start;
+  margin-left: -27px;
+}
 
-  }
+.rodape-coluna img {
+  display: block;
+  width: 80px;
+  height: 80px;
+
+}
 
 .rodape-coluna li {
   padding: 3px;
   text-align: start;
   font-size: 18px;
-  }
+}
 
-  .rodape-coluna a {
-    color: white;
-    transition: 0.5s;
-  }
+.rodape-coluna a {
+  color: white;
+  transition: 0.5s;
+}
 
-  .rodape-coluna a:hover {
-    color: #5bc1ac;
-  }
-  .infocontato{
-    margin-left: -85px !important;
+.rodape-coluna a:hover {
+  color: #5bc1ac;
+}
 
-  }
+.infocontato {
+  margin-left: -85px !important;
 
-  .barrafinal {
-    background-color: var(--cor-secundaria);
-    height: 60px;
-    width: 100%;
-    display: flex;
-    padding: 5px;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow:#000000;
-    
-    
-  }
+}
 
-   .barrafinal a {
-    color: var(--cor-branca);
-    transition: 0.5s;
-    
-  }
+.barrafinal {
+  background-color: var(--cor-secundaria);
+  height: 60px;
+  width: 100%;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: #000000;
 
-  .barrafinal a:hover {
-    color: var(--background-botao-hover);
-  
-  }
 
-  .colunafinal i {
-    font-size: 19px;
-    padding: 5px;
-    background-color: var(--background-footer);
-    border-radius: 20px;
-   
-   
-  }
+}
 
-  .colunafinal i:hover {
-    background-color: var(--cor-branca) ;
-    }
+.barrafinal a {
+  color: var(--cor-branca);
+  transition: 0.5s;
 
-  .paragrafo {
-    color: var(--cor-branca);
-    padding: 5px;
-    font-family: var(--fonte-principal);
-    font-size: small;
-  }
+}
 
+.barrafinal a:hover {
+  color: var(--background-botao-hover);
+
+}
+
+.colunafinal i {
+  font-size: 19px;
+  padding: 5px;
+  background-color: var(--background-footer);
+  border-radius: 20px;
+
+
+}
+
+.colunafinal i:hover {
+  background-color: var(--cor-branca);
+}
+
+.paragrafo {
+  color: var(--cor-branca);
+  padding: 5px;
+  font-family: var(--fonte-principal);
+  font-size: small;
+}
+
+.whatsapp-float {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 90px;
+  height: 90px;
+  bottom: 50px;
+  right: 20px;
+  background-color: #5bc1ac;
+  font-size: 100px;
+  text-align: center;
+  color: var(--cor-branca);
+  border-radius: var(--border-radius-large);
+  border: 1px solid rgba(255, 255, 255, 0.586);
+}
+
+.whatsapp-float i {
+  font-size: 65px;
+  text-align: center;
+}
+
+.whatsapp-float:hover{
+  color: var(--cor-branca);
+  transform: scale(1.1);
+  transition: 1s;
+
+}
 
 
 
@@ -849,12 +901,14 @@ body {
     display: flex;
     position: fixed;
   }
+
   .itens-menu {
     margin-top: 20px;
     flex-direction: column;
     position: fixed;
     background: var(--background-secoes);
-    opacity: 0; /* Esconde o menu inicialmente */
+    opacity: 0;
+    /* Esconde o menu inicialmente */
     visibility: hidden;
     transform: translateY(-20px);
     transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
@@ -865,18 +919,19 @@ body {
   .herop2 {
     font-size: 16px;
   }
+
   .btn {
     font-size: 14px;
   }
-  
+
 }
 
 .itens-menu.ativo {
   display: flex;
   height: calc(100vh - 50px);
   flex-direction: column;
-  position: absolute ;
-  top:50px ;
+  position: absolute;
+  top: 50px;
   left: 0;
   width: 100%;
   background: var(--background-secoes);
@@ -891,11 +946,3 @@ body {
   padding: 10px;
 
 }
-
-
-
-
-
-
-
-
