@@ -121,6 +121,13 @@ body {
   display: flex;
   gap: 15px;
   margin-right: 50px;
+  
+}
+.redes-sociais a {
+  color:white;
+}
+.redes-sociais a:hover {
+  color: var(--cor-secundaria);
 }
 
 .fa-brands {
