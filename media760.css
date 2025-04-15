@@ -134,13 +134,20 @@ height: 500px
     margin-right: 0px;
 }
 
+.avaliacao {
+margin-top: 15px;
+margin-bottom: 250px;
+}
 .avaliacao h1 {
     text-align: center;
+    
     
 }
 
 .formulariocontato {
     flex-flow: column;
+
+    
 }
 .formulario form{
     width: 500px;
@@ -152,7 +159,7 @@ height: 500px
 .maps {
    margin-top: 25px;
     width: 500px;
-    margin-right: 25px;
+    margin-right: 15px;
    
     
 }
@@ -170,8 +177,9 @@ height: 500px
 }
  .contatoladodireito {
     flex-flow: column;
-    justify-content: space-around;
-    margin: 0px;
+    justify-content: center;
+    margin-top: 25px;
+    
     
 }
 

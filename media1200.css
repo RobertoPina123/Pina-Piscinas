@@ -1,0 +1,37 @@
+@media (max-width: 1200px )  {
+
+    .historia {
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+        height: auto;
+    
+    }
+    
+    .historiafoto {
+        width: 800px;
+        height: 500px;
+        padding: 0px;
+        margin-top: 50px;
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: contain;
+        background-position: center center ;
+    }
+    
+    .historiabloco {
+        margin: 0px;
+        padding: 0px;
+        align-self: center;
+        width: 800px;
+    }
+    
+    .historiabloco2 {
+        width: 800px;
+        height: 200px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-right: 0px;
+    }
+
+}

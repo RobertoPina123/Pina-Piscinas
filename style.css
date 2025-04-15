@@ -400,6 +400,7 @@ body {
 .historiabloco p {
   padding: 15px;
   line-height: 20px;
+  font-size: 20px;
 }
 
 .historiabloco2 {
@@ -412,6 +413,7 @@ body {
   display: flex;
   flex-flow: column;
   align-items: center;
+  font-size: 20px;
 
 }
 
@@ -475,7 +477,7 @@ body {
   text-align: start;
   color: var(--cor-branca);
   font-family: var(--fonte-principal);
-  font-size: 15px;
+  font-size: 18px;
   justify-content: center;
 }
 
