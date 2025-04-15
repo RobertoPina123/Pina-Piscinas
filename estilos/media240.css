@@ -1,0 +1,138 @@
+@media (max-width: 240px) {
+
+.dohero {
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.hero-content {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.herop2 {
+ font-size: 12px;
+
+
+}
+.bemvindo {
+ margin-top: 5px;
+ align-items: center;
+ justify-content: center;
+}    
+
+.bemvindoimg {
+    margin: 150px 0px 100px 0px;
+    display: flex;
+    flex-flow: column;
+}
+
+.bemvindoimg img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+   
+    
+}
+.bemvindoh1 {
+    margin-top: 100px;
+    margin-bottom: 80px;
+    font-size: 16px;
+    
+}
+.historia {
+    justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    align-content: center;
+}
+
+.historia2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.historiabloco  {
+    width: 90%;
+    height: auto;
+    margin: 15px 0px 15px 0px;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.historiabloco2 {
+    width: 90%;
+    height: auto;
+    margin: 15px 0px 15px 15px;
+    gap: 15px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.historia h1{
+font-size: 20px;
+}
+
+.historia p {
+    font-size: 16px;
+    text-align: center;
+    
+}
+.historiafoto {
+    width: 90%;
+    height: 150px;
+    border-radius: var(--border-radius-medium);
+}
+
+.destaqueroberto {
+   
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.fotoroberto {
+    width: 70%;
+    margin-top: 15px;
+}
+
+.descricaoroberto h1 {
+font-size: 20px;
+text-align: start;
+}
+
+.descricaoroberto p {
+    font-size: 14px;
+    text-align: start;
+    
+}
+
+.galeria img {
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

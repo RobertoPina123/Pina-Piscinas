@@ -109,7 +109,7 @@ height: 500px
 }
 
 .historiafoto {
-    width: 600px;
+    width: 600px ;
     height: 500px;
     padding: 0px;
     margin-top: 50px;
@@ -166,12 +166,12 @@ margin-bottom: 250px;
 
 .fotocontato {
     height: 250px;
-    width: 98vw;
+    width: 100%;
     margin-top: 0px;
-     border-radius: 0px;
-    margin-bottom: 100px;
+    border-radius: 0px;
+    margin-bottom: 175px;
     background-size: cover;
-    background-position: center center;
+    background-position: center ;
 
     
 }
@@ -179,6 +179,7 @@ margin-bottom: 250px;
     flex-flow: column;
     justify-content: center;
     margin-top: 25px;
+    width: 100%;
     
     
 }

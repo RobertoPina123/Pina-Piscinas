@@ -422,6 +422,7 @@ body {
   color: var(--cor-principal);
   font-size: 30px;
   font-family: var(--fonte-principal);
+  
 
 }
 
@@ -597,8 +598,7 @@ body {
   width: 350px;
   height: 200px;
   background-color: var(--background-secoes);
-  background-image: url(imagens/bloco\ contato\ ferramentas.png);
-  background-size: cover;
+   background-size: cover;
   background-position: center center;
   border-radius: var(--border-radius-medium);
   margin-top: 20px;
