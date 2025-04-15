@@ -1,0 +1,204 @@
+@media (max-width: 768px) {
+
+
+
+    .topo-fixo {
+        display: none;
+        margin: 0;
+        padding: 0;
+        height: 0;
+    }
+
+    #botaomenu {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        border: none;
+        padding: 10px;
+        position: absolute;
+        top: 5px;
+        right: 20px;
+        z-index: 20;
+    }
+
+    #botaomenu:focus {
+        outline: none;
+    }
+
+    .menu {
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        position: fixed;
+        background-color: var(--background-secoes);
+    }
+
+    .itens-menu {
+        margin-top: 20px;
+        flex-direction: column;
+        position: fixed;
+        background: var(--background-secoes);
+        opacity: 0;
+        /* Esconde o menu inicialmente */
+        visibility: hidden;
+        transform: translateY(-20px);
+        transition: opacity 0.5s ease, transform 0.5s ease, visibility 0.5s;
+        z-index: 100;
+    }
+
+    .hero-content {
+        font-size: 35px;
+
+    }
+
+    .herop2 {
+        margin-top: 15px;
+        font-size: 20px;
+    }
+
+    .btn {
+        font-size: 15px;
+
+    }
+
+
+
+.itens-menu.ativo {
+    display: flex;
+    height: calc(100vh - 50px);
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: var(--background-secoes);
+    text-align: start;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+}
+
+.itens-menu.ativo li {
+    padding: 10px;
+
+}
+
+.carousel {
+height: 500px
+}
+
+.bemvindoh1 {
+    font-size: 24px;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.bemvindo img {
+    width: 150px;
+    height: 150px;
+}
+
+.historia {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    height: auto;
+
+}
+
+.historiafoto {
+    width: 600px;
+    height: 500px;
+    padding: 0px;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+    background-color: contain;
+    background-position: center center ;
+}
+
+.historiabloco {
+    margin: 0px;
+    padding: 0px;
+    align-self: center;
+    width: 600px;
+}
+
+.historiabloco2 {
+    width: 600px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-right: 0px;
+}
+
+.avaliacao h1 {
+    text-align: center;
+    
+}
+
+.formulariocontato {
+    flex-flow: column;
+}
+.formulario form{
+    width: 500px;
+    height: 400px;
+    margin: 0px;
+    justify-content: center;
+}
+
+.maps {
+   margin-top: 25px;
+    width: 500px;
+    margin-right: 25px;
+   
+    
+}
+
+.fotocontato {
+    height: 250px;
+    width: 98vw;
+    margin-top: 0px;
+     border-radius: 0px;
+    margin-bottom: 100px;
+    background-size: cover;
+    background-position: center center;
+
+    
+}
+ .contatoladodireito {
+    flex-flow: column;
+    justify-content: space-around;
+    margin: 0px;
+    
+}
+
+.whatsapp-float {
+    height: 70px;
+    width: 70px;
+   
+}
+
+.whatsapp-float i {
+    font-size: 45px;
+}
+
+.rodape {
+   margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-coluna a {
+    font-size: 14px;
+    text-align: start;
+}
+.rodape-coluna h1 {
+    font-size: 18px;
+    text-align: start;
+    margin: 0px;
+}
+
+}
